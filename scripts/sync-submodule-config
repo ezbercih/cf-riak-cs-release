@@ -1,0 +1,27 @@
+#!/bin/bash
+ 
+set -e -x
+
+# ensure gosub is installed (this will recompile it only if necessary)
+go install github.com/vito/gosub
+
+{
+  gosub list \
+    -app github.com/cloudfoundry-incubator/riakcs_ctrl/... \
+    -app github.com/cloudfoundry-incubator/route-registrar/... 
+  
+  # separate these so gosub doesn't asplode
+#  gosub list -test github.com/cloudfoundry-incubator/riakcs_ctrl/...
+  gosub list -test github.com/cloudfoundry-incubator/route-registrar/...
+#  gosub list -test github.com/cloudfoundry-incubator/riakcs-acceptance-tests/...
+  
+  gosub list -app github.com/vito/gosub
+
+} > /tmp/packages
+
+cat /tmp/packages | xargs gosub sync
+git submodule add git@github.com:cloudfoundry/cf-riak-cs-broker src/cf-riak-cs-broker
+#git submodule add -b 2.0.0 git@github.com:cloudfoundry/ruby-package packages/ruby
+git submodule add git@github.com:pivotal-cf/broker-registrar src/broker-registrar
+git submodule add git@github.com:cloudfoundry-incubator/cf-test-helpers src/github.com/cloudfoundry-incubator/cf-test-helpers
+

@@ -1,19 +1,60 @@
 [submodule "shared"]
 	path = shared
 	url = https://github.com/cloudfoundry/shared-release-packages.git
-[submodule "src/cf-riak-cs-broker"]
-	path = src/cf-riak-cs-broker
-	url = https://github.com/cloudfoundry/cf-riak-cs-broker.git
 [submodule "packages/ruby"]
 	path = packages/ruby
 	url = https://github.com/cloudfoundry/ruby-package 
 	branch = 2.0.0
-[submodule "src/route-registrar/src/github.com/cloudfoundry-incubator/route-registrar"]
-	path = src/route-registrar/src/github.com/cloudfoundry-incubator/route-registrar
-	url = https://github.com/cloudfoundry-incubator/route-registrar.git
+[submodule "src/github.com/cloudfoundry-incubator/riakcs_ctrl"]
+	path = src/github.com/cloudfoundry-incubator/riakcs_ctrl
+	url = git@github.com:cloudfoundry-incubator/riakcs_ctrl
+	branch = master
+[submodule "src/github.com/cloudfoundry-incubator/route-registrar"]
+	path = src/github.com/cloudfoundry-incubator/route-registrar
+	url = git@github.com:cloudfoundry-incubator/route-registrar
+	branch = master
+[submodule "src/github.com/nu7hatch/gouuid"]
+	path = src/github.com/nu7hatch/gouuid
+	url = git@github.com:nu7hatch/gouuid
+	branch = master
+[submodule "src/github.com/fraenkel/candiedyaml"]
+	path = src/github.com/fraenkel/candiedyaml
+	url = git@github.com:fraenkel/candiedyaml
+	branch = master
+[submodule "src/github.com/cloudfoundry/yagnats"]
+	path = src/github.com/cloudfoundry/yagnats
+	url = git@github.com:cloudfoundry/yagnats
+	branch = master
+[submodule "src/github.com/cloudfoundry/gibson"]
+	path = src/github.com/cloudfoundry/gibson
+	url = git@github.com:cloudfoundry/gibson
+	branch = master
+[submodule "src/github.com/codegangsta/cli"]
+	path = src/github.com/codegangsta/cli
+	url = git@github.com:codegangsta/cli
+	branch = master
+[submodule "src/github.com/vito/gosub"]
+	path = src/github.com/vito/gosub
+	url = git@github.com:vito/gosub
+	branch = master
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = git@github.com:onsi/ginkgo
+	branch = master
+[submodule "src/github.com/apcera/nats"]
+	path = src/github.com/apcera/nats
+	url = git@github.com:apcera/nats
+	branch = master
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = git@github.com:onsi/gomega
+	branch = master
+[submodule "src/cf-riak-cs-broker"]
+	path = src/cf-riak-cs-broker
+	url = git@github.com:cloudfoundry/cf-riak-cs-broker
 [submodule "src/broker-registrar"]
 	path = src/broker-registrar
-	url = https://github.com/pivotal-cf/broker-registrar.git
-[submodule "src/riakcs_ctrl/src/github.com/cloudfoundry-incubator/riakcs_ctrl"]
-	path = src/riakcs_ctrl/src/github.com/cloudfoundry-incubator/riakcs_ctrl
-	url = https://github.com/cloudfoundry-incubator/riakcs_ctrl.git
+	url = git@github.com:pivotal-cf/broker-registrar
+[submodule "src/github.com/cloudfoundry-incubator/cf-test-helpers"]
+	path = src/github.com/cloudfoundry-incubator/cf-test-helpers
+	url = git@github.com:cloudfoundry-incubator/cf-test-helpers

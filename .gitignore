@@ -17,6 +17,8 @@ riak-cs-*.yml
 *~
 *#
 #*
+bin
+pkg
 
 # nise-bosh-vagrant
 Vagrantfile
